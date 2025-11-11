@@ -525,8 +525,7 @@
       <div class="col-lg-12 col-xl-4 text-center">
         <div class="video-button">
           <div class="hover">
-            <a href="https://www.youtube.com/watch?v=AmDH8_bTRo8"
-              class="video-play-btn-02 video-popup mfp-iframe">
+            <a href="#" class="video-play-btn-02" onclick="playVideo(event)">
               <i aria-hidden="true" class="fas fa-play"></i>
             </a>
           </div>
@@ -545,7 +544,7 @@
           <h2 class="title">Leading Private Security Company</h2>
 
           <p class="video-para">
-            With over 15 years of trusted service, <strong>Syndicate Security</strong> has built a strong reputation for reliability, professionalism, and innovation protecting clients across commercial, corporate, and public sectors throughout the UK.
+            With over 15 years of trusted service, <strong>Syndicate Security</strong> has built a strong reputation for reliability, professionalism, and innovation — protecting clients across commercial, corporate, and public sectors throughout the UK.
           </p>
 
           <div class="btn-wrap">
@@ -560,8 +559,66 @@
       </div>
     </div>
   </div>
+
+  <!-- hidden video popup -->
+  <div id="videoPopup" class="video-popup-container" style="display:none;">
+    <div class="video-popup-overlay" onclick="closeVideo()"></div>
+    <video id="syndicateVideo" controls autoplay>
+      <source src="assets/img/section-img/video/syndicate.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 </div>
 <!-- video area end -->
+
+<!-- JS -->
+<script>
+  function playVideo(event) {
+    event.preventDefault();
+    document.getElementById('videoPopup').style.display = 'flex';
+  }
+
+  function closeVideo() {
+    const popup = document.getElementById('videoPopup');
+    const video = document.getElementById('syndicateVideo');
+    video.pause();
+    popup.style.display = 'none';
+  }
+</script>
+
+<!-- CSS -->
+<style>
+  .video-popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+
+  .video-popup-container video {
+    width: 85%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  }
+
+  .video-popup-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  
+</style>
+
 
 
    <!-- our commitment area -->
