@@ -9164,12 +9164,15 @@ li.mail-footer a {
 }
 
 .testimonial-area {
-  background-image: url("../img/section-img/testimonial/bg-test.png");
+  background-image: url(../img/section-img/testimonial/syndicate-text.jpg);
   background-repeat: no-repeat;
-  height: 100%;
+  background-position: center center;
+  background-size: cover;       /* fills the section */
+  height: auto;                 /* allow content to define height */
   width: 100%;
   padding: 120px 0;
   position: relative;
+  z-index: 0;
 }
 
 .testimonial-area.testimonial-area-inner-bg-remove {
@@ -9325,7 +9328,7 @@ li.mail-footer a {
 }
 
 .team-area {
-  background-image: url("../img/section-img/team/team.png");
+  background-image: url("../img/section-img/vid/team.png");
   padding: 100px 0 100px 0;
   position: relative;
   margin-bottom: 90px;
@@ -15164,4 +15167,10 @@ ul.blocks-gallery-grid li:before {
 
 .logo img{
   max-width: 120px !important;
+}
+@media (max-width: 570px) {
+  .logo img,
+  .logo-white-display img {
+    max-width: 100px !important;
+  }
 }
