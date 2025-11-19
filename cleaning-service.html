@@ -649,7 +649,7 @@ document.getElementById("cleaning-contact-form").addEventListener("submit", asyn
         name: formData.get("name"),
         email: formData.get("email"),
         message: formData.get("message"),
-        service: "Cleaning Service Sidebar Form"
+        service: "Cleaning Service Enquiry"
     };
 
     try {
@@ -679,127 +679,117 @@ document.getElementById("cleaning-contact-form").addEventListener("submit", asyn
     </div>
 
     <!-- footer area start -->
-    <footer class="footer-area">
-        <div class="container">
-            <div class="footer-top padding-top-85 padding-bottom-50">
-                <div class="subscribe-wrapper">
-                    <div class="row align-items-center">
-                        <div class="col-lg-4">
-                            <a href="index.html" class="footer-logo"> <img src="assets/img/logo/white-logo.png"
-                                    alt="footer logo"></a>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="subscribe-box">
-                                <form action="#">
-                                    <input type="text" placeholder="enter your email address">
-                                    <button class="btn-panthar btn-border-base footer-subscribe-btn">
-                                        <span class="top_left"></span>
-                                        <span class="top_right"></span>
-                                        GET ALERT <i class="far fa-paper-plane"></i>
-                                        <span class="bottom_left"></span>
-                                        <span class="bottom_right"></span>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div id="panthar_about_me_widget-2" class="widget footer-widget panthar-widget-about-me">
-                            <div class="footer-widget widget">
-                                <div class="about_me_widget style-01">
-                                    <h4 class="widget-headline">about us</h4>
-                                    <p> Our team includes doormen, bodyguards, and parking lot patrol officers more
-                                        than
-                                        15 years of combined our experience.</p>
-                                    <ul class="widget-list-items">
-                                        <li>
-                                            <div class="icon">
-                                                <a href="#">
-                                                    <i class="fab fa-instagram"></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="icon">
-                                                <a href="#">
-                                                    <i class="fab fa-twitter"></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="icon">
-                                                <a href="#">
-                                                    <i class="fab fa-pinterest-p"></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="icon">
-                                                <a href="#">
-                                                    <i class="fab fa-linkedin-in"></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+<footer class="footer-area">
+  <div class="container">
+    <div class="footer-top padding-top-85 padding-bottom-50">
+      <!-- Subscribe Section -->
+      <div class="subscribe-wrapper">
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <a href="index.html" class="footer-logo">
+              <img src="assets/img/logo/logo.png" alt="The Syndicate Group Logo">
+            </a>
+          </div>
+          <div class="col-lg-8">
+            <div class="subscribe-box">
+              <form action="#">
+                <input type="email" placeholder="Enter your email address" required>
+                <button class="btn-panthar btn-border-base footer-subscribe-btn">
+                  <span class="top_left"></span>
+                  <span class="top_right"></span>
+                  GET ALERT <i class="far fa-paper-plane"></i>
+                  <span class="bottom_left"></span>
+                  <span class="bottom_right"></span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="footer-widget widget widget_nav_menu">
-                            <h4 class="widget-headline">OUR COMPANY</h4>
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="service.html">Service</a></li>
-                                <li><a href="about.html">Our Campaign</a></li>
-                                <li><a href="team.html">Our Volunteer</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="footer-widget widget widget_nav_menu">
-                            <h4 class="widget-headline">HELP</h4>
-                            <ul>
-                                <li><a href="service.html">Event Security</a></li>
-                                <li><a href="service.html">Bank Security</a></li>
-                                <li><a href="service.html">Office Security</a></li>
-                                <li><a href="service.html">Office Security</a></li>
-                                <li><a href="service.html">Vehicle Escort</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="footer-widget widget widget_nav_menu">
-                            <h4 class="widget-headline">SERVICES</h4>
-                            <ul>
-                                <li><a href="service.html">Knowledge base</a></li>
-                                <li><a href="service.html">Security resources</a></li>
-                                <li><a href="faq.html">Terms & Conditions</a></li>
-                                <li><a href="gallary.html">Gallery</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <!-- Footer Widgets -->
+      <div class="row">
+        <!-- About Us -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-widget widget panthar-widget-about-me">
+            <h4 class="widget-headline">About Us</h4>
+            <p>
+              The Syndicate Group is a UK-based security company delivering trusted, professional, and licensed protection services across commercial, corporate, and public sectors.
+            </p>
+            <ul class="widget-list-items social-links">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+          </div>
         </div>
-        <div class="copyright-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="copyright-area-inner">
-                            <p>Copyright 2021 Panthar. Designed By <span>themebuzs</span> </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+        <!-- Company -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-widget widget widget_nav_menu">
+            <h4 class="widget-headline">Our Company</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
         </div>
-    </footer>
-    <!-- footer area end -->
+
+        <!-- Services -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-widget widget widget_nav_menu">
+            <h4 class="widget-headline">Our Services</h4>
+            <ul>
+              <li><a href="/service.html">Manned Guarding</a></li>
+              <li><a href="/service.html">Mobile Patrols</a></li>
+              <li><a href="/service.html">CCTV Monitoring</a></li>
+              <li><a href="/service.html">Alarm Systems</a></li>
+              <li><a href="/service.html">Event Security</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-widget widget">
+            <h4 class="widget-headline">Contact Us</h4>
+            <ul class="contact-info-list">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                London, United Kingdom
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@thesyndicategroup.co.uk">info@thesyndicategroup.co.uk</a>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+01925971609">+01925971609</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="copyright-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="copyright-area-inner">
+            <p>© <span id="year"></span> The Syndicate Group. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer area end -->
     <!-- back to top area start -->
     <div class="back-to-top">
         <span class="back-top"><i class="fa fa-angle-up"></i></span>
