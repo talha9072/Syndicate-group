@@ -79,9 +79,6 @@ h6 {
 
 p {
   color: var(--para-color-two);
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
   margin-bottom: 10px;
   font-family: var(--body-font);
   line-height: 30px;
