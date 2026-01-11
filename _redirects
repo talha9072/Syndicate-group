@@ -1,0 +1,3 @@
+# Force HTTPS
+http://thesyndicategroup.co.uk/* https://thesyndicategroup.co.uk/:splat 301!
+

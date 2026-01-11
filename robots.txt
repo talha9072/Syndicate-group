@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thesyndicategroup.co.uk/sitemap.xml
